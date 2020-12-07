@@ -1,3 +1,23 @@
-// -----------------------------------------------------------------------------
-// This file contains all styles related to the header of the site/application.
-// -----------------------------------------------------------------------------
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 4rem;
+    border-bottom: 1px solid #ccc;
+
+    .logo {
+        font-weight: 700;
+        font-size: 2rem;
+    }
+
+    ul {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    li {
+        font-size: 0.9rem;
+        font-weight: 500;
+        margin: 0 2.3rem;
+    }
+}
