@@ -1,23 +1,28 @@
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 2rem 4rem;
-    border-bottom: 1px solid #ccc;
+.site-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 2em 4em;
+	border-bottom: 1px solid $color-underline;
+}
 
-    .logo {
-        font-weight: 700;
-        font-size: 2rem;
-    }
+.header-branding {
+	font-weight: 700;
+	font-size: $font-size-xl;
+}
 
-    ul {
-        display: flex;
-        justify-content: space-between;
-    }
+.menu-main {
+	display: flex;
+	justify-content: space-between;
+	padding-left: 0;
+}
 
-    li {
-        font-size: 0.9rem;
-        font-weight: 500;
-        margin: 0 2.3rem;
-    }
+.menu-main-item {
+	font-size: $font-size-md;
+	font-weight: 500;
+	margin: 0 3.5em;
+}
+
+.fa-search {
+	font-size: $font-size-md;
 }

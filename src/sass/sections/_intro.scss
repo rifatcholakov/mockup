@@ -1,94 +1,96 @@
-// -----------------------------------------------------------------------------
-// This file contains styles that are specific to the intro section.
-// -----------------------------------------------------------------------------
-
 .section-intro {
-    display: flex;
-    align-items: center;
-    padding: 5em 10em;
+	display: flex;
+	align-items: center;
+	max-width: 65em;
+	margin: 5em auto;
+}
 
-    .intro-copy {
-        width: 190%;
-        margin-right: 2em;
+.intro-copy {
+	flex: 0 0 27em;
+	margin-right: 2em;
+}
 
-        h1 {
-            font-size: 2.5em;
-            font-weight: 400;
-            margin-top: 0.3em;
-        }
+.into-subheader {
+	text-transform: uppercase;
+	font-size: $font-size-xs;
+	font-weight: 500;
+}
 
-        .into-subheader {
-            text-transform: uppercase;
-            font-size: 0.7em;
-            font-weight: 500;
-        }
+.intro-copy-text {
+	color: $color-secondary;
+	font-size: $font-size-md;
+	padding-right: 1em;
+	line-height: 1.5em;
+}
 
-        p {
-            color: #818181;
-            font-size: 0.9em;
-        }
-    }
+.intro-copy-title {
+	font-size: $font-size-xxl;
+	font-weight: 400;
+	margin-top: 0.3em;
+}
 
-    .intro-image-container {
-        position: relative;
-        width: 150%;
+.intro-image-container {
+	position: relative;
 
-        img {
-            width: calc(100% + 4em);
-            position: relative;
-        }
-    }
+	img {
+		position: relative;
+		right: 2em;
+		top: 1em;
+		max-width: calc(100% + 6em);
+	}
+}
 
-    .blockquote-frame {
-        flex-basis: 70em;
-        text-align: center;
-        border: 8px solid #000;
-        margin-top: 3em;
-        margin-bottom: 3em;
-        padding: 2em;
-        z-index: 200;
+.blockquote-box {
+	flex: 0 0 18em;
+	text-align: center;
+	padding: 1.25em;
+	z-index: 200;
+}
 
-        .frame-title {
-            display: block;
-            text-transform: uppercase;
-            font-size: 0.7em;
-            font-weight: 400;
-        }
+.blockquote {
+	margin: 3rem 0;
+	font-family: $font-secondary;
+	font-style: normal;
+	font-size: $font-size-lg;
+}
 
-        cite {
-            display: block;
-            font-family: serif;
-            font-style: normal;
-            font-size: 1.2em;
-            margin: 2em 0;
-        }
+.blockquote-title {
+	display: block;
+	text-transform: uppercase;
+	font-size: $font-size-xs;
+	font-weight: 400;
+}
 
-        cite::before {
-            content: open-quote;
-        }
+.blockquote::before {
+	content: open-quote;
+}
 
-        cite::after {
-            content: close-quote;
-        }
+.blockquote::after {
+	content: close-quote;
+}
 
-        .icon-onion {
-            display: block;
-            width: 25px;
-            transform: rotate(270deg);
-            margin: 1em auto;
-        }
+.quote-author {
+	text-transform: uppercase;
+	display: block;
+	font-size: $font-size-xs;
+}
 
-        .citation-author {
-            text-transform: uppercase;
-            display: block;
-            font-size: 0.7em;
-        }
+.quote-source {
+	font-weight: 500;
+	text-transform: uppercase;
+	display: block;
+	font-size: 0.8em;
+}
 
-        .citation-source {
-            font-weight: 500;
-            text-transform: uppercase;
-            display: block;
-            font-size: 0.8em;
-        }
-    }
+.box-icon {
+	margin: 0 auto 0.5em;
+}
+
+.icon-brand {
+	width: 1.5625em;
+	transform: rotate(270deg);
+}
+
+.frame {
+	border: 8px solid $color-primary;
 }

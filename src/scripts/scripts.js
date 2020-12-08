@@ -1,1 +1,1 @@
-console.log('Welcome to scripts folder');
+console.log('Welcome from the scripts folder :)');

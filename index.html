@@ -5,28 +5,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./dist/css/main.min.css">
     <title>hidden onions.</title>
 </head>
 
 <body>
     <!-- Top Header Start -->
-    <header class="header">
-        <div class="logo">
-            <span class="header-logo">hidden onions.</span>
+    <header class="site-header">
+        <div class="header-branding">
+            hidden onions.
         </div>
         <!-- Main Navigation -->
-        <nav>
-            <ul>
-                <li><a href="#">Hidden onion Serier</a></li>
-                <li><a href="#">Features</a></li>
-                <li><a href="#">Business Resources</a></li>
-                <li><a href="#">Our Mission</a></li>
+        <nav class="site-navigation-main">
+            <ul class="menu-main">
+                <li class="menu-main-item"><a href="#">Hidden onion Serier</a></li>
+                <li class="menu-main-item"><a href="#">Features</a></li>
+                <li class="menu-main-item"><a href="#">Business Resources</a></li>
+                <li class="menu-main-item"><a href="#">Our Mission</a></li>
             </ul>
         </nav>
         <!-- --- -->
         <!-- Search Bar -->
-        <div class="search-bar">
+        <div class="site-search-bar">
             <i class="fas fa-search"></i>
         </div>
         <!-- --- -->
@@ -36,25 +40,28 @@
     <section class="section-intro">
         <div class="intro-copy">
             <span class="into-subheader">real talk from from female founders</span>
-            <h1>Introducing the hidden onion series</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            <h1 class="intro-copy-title">Introducing the hidden onion series</h1>
+            <p class="intro-copy-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et
                 dolore
                 magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
                 commodo consequat.</p>
-            <a class="link" href="#">view hidden onion series</a>
+            <a class="button-inline" href="#">view hidden onion series</a>
         </div>
         <div class="intro-image-container">
             <img src="./dist/images/intro.jpg" alt="">
         </div>
-        <div class="blockquote-frame">
-            <span class="frame-title">featured</span>
-            <cite>
+        <div class="blockquote-box frame">
+            <span class="blockquote-title">featured</span>
+            <blockquote class="blockquote">
                 My hidden onion moment was when I was overworking and neglecting other areas of my life. 15 hour days X
                 7days a week was not healty or sustainable. I learnt to work smarter not just harder.
-            </cite>
-            <img class="icon-onion" src="./dist/images/onion.png" alt="onion logo">
-            <span class="citation-author">Chriselle Lim</span>
-            <span class="citation-source">The Chriselle Factor</span>
+            </blockquote>
+            <div class="box-icon">
+                <img class="icon-brand" src="./dist/images/onion.png" alt="onion logo">
+            </div>
+            <span class="quote-author">Chriselle Lim</span>
+            <span class="quote-source">The Chriselle Factor</span>
         </div>
     </section>
     <!-- Intro Section End -->
