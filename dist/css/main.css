@@ -675,7 +675,7 @@ body {
   .intro-wrapper {
     justify-content: center; }
   .intro-copy {
-    flex: 0 0 45em;
+    flex: 0 0 35em;
     margin-bottom: 2.5em; } }
 
 @media (max-width: 768px) {
