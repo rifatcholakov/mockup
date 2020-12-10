@@ -1,13 +1,14 @@
-.section-intro {
+.intro-wrapper {
 	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
 	align-items: center;
 	max-width: 65em;
-	margin: 5em auto;
+	margin: 0 auto;
 }
 
 .intro-copy {
-	flex: 0 0 27em;
-	margin-right: 2em;
+	flex: 0 0 23em;
 }
 
 .into-subheader {
@@ -19,7 +20,6 @@
 .intro-copy-text {
 	color: $color-secondary;
 	font-size: $font-size-md;
-	padding-right: 1em;
 	line-height: 1.5em;
 }
 
@@ -30,28 +30,32 @@
 }
 
 .intro-image-container {
-	position: relative;
+	flex: 0 0 17em;
 
 	img {
 		position: relative;
-		right: 2em;
-		top: 1em;
-		max-width: calc(100% + 6em);
+		left: 0;
+		max-width: calc(100% + 7em);
 	}
 }
 
 .blockquote-box {
 	flex: 0 0 18em;
 	text-align: center;
-	padding: 1.25em;
+	padding: 0.75em;
 	z-index: 200;
 }
 
+.blockquote-box-frame {
+	border: 8px solid $color-primary;
+}
+
 .blockquote {
-	margin: 3rem 0;
+	margin: 4em 0;
 	font-family: $font-secondary;
 	font-style: normal;
 	font-size: $font-size-lg;
+	line-height: 1.5em;
 }
 
 .blockquote-title {
@@ -69,17 +73,16 @@
 	content: close-quote;
 }
 
-.quote-author {
+.quote-author,
+.quote-source {
 	text-transform: uppercase;
 	display: block;
 	font-size: $font-size-xs;
+	letter-spacing: 2px;
 }
 
 .quote-source {
 	font-weight: 500;
-	text-transform: uppercase;
-	display: block;
-	font-size: 0.8em;
 }
 
 .box-icon {
@@ -91,6 +94,67 @@
 	transform: rotate(270deg);
 }
 
-.frame {
-	border: 8px solid $color-primary;
+@media (max-width: 992px) {
+	.intro-wrapper {
+		justify-content: center;
+	}
+
+	.intro-copy {
+		flex: 0 0 45em;
+		margin-bottom: 2.5em;
+	}
+}
+
+@media (max-width: 768px) {
+	.intro-copy {
+		flex: 0 0 30em;
+	}
+
+	.intro-image-container {
+		flex: 0 0 15em;
+	}
+
+	.blockquote-box {
+		flex: 0 0 15em;
+	}
+}
+
+@media (max-width: 592px) {
+	.intro-copy {
+		flex: 0 0 25em;
+	}
+}
+
+@media (max-width: 544px) {
+	.intro-copy {
+		flex: 0 0 20em;
+	}
+
+	.blockquote-box {
+		flex: 0 0 13em;
+	}
+}
+
+@media (max-width: 496px) {
+	.intro-image-container {
+		flex: 0 0 10em;
+	}
+
+	.blockquote-box {
+		flex: 0 0 15em;
+	}
+}
+
+@media (max-width: 432px) {
+	.intro-copy {
+		flex: 0 0 17em;
+	}
+
+	.intro-image-container {
+		flex: 0 0 0em;
+	}
+
+	.blockquote-box {
+		flex: 0 0 17em;
+	}
 }

@@ -2,27 +2,111 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 2em 4em;
+	padding: 0 4em;
 	border-bottom: 1px solid $color-underline;
 }
 
 .header-branding {
-	font-weight: 700;
-	font-size: $font-size-xl;
+	a {
+		font-weight: 700;
+		font-size: $font-size-xl;
+	}
+}
+
+.menu-mobile-icon-open,
+.menu-mobile-icon-close {
+	display: none;
 }
 
 .menu-main {
 	display: flex;
 	justify-content: space-between;
 	padding-left: 0;
+	margin: 0;
 }
 
 .menu-main-item {
 	font-size: $font-size-md;
 	font-weight: 500;
-	margin: 0 3.5em;
+
+	a {
+		display: inline-block;
+		padding: 3em 3.5em;
+	}
 }
 
 .fa-search {
 	font-size: $font-size-md;
+}
+
+@media (max-width: 1200px) {
+	.site-header {
+		padding: 1.5em;
+	}
+
+	.menu-mobile-icon-open {
+		display: block;
+		font-size: $font-size-lg;
+	}
+
+	.menu-mobile-icon-close {
+		position: absolute;
+		top: 0.5em;
+		right: 1em;
+		font-size: $font-size-xl;
+		z-index: 10000;
+		color: $color-mobile-menu-items;
+	}
+
+	.site-navigation-main {
+		height: 100%;
+		width: 0;
+		position: fixed;
+		z-index: 1000;
+		top: 0;
+		left: 0;
+		background-color: rgb(0, 0, 0);
+		overflow-x: hidden;
+		transition: 0.5s;
+	}
+
+	.menu-main {
+		order: 1;
+		position: relative;
+		top: 25%;
+		width: 100%;
+		text-align: center;
+		display: block;
+	}
+
+	.menu-main-item {
+		display: block;
+		font-size: $font-size-xl;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+		font-weight: 600;
+		transition: 0.3s;
+
+		a {
+			color: $color-mobile-menu-items;
+			padding: 1em;
+		}
+
+		a:hover,
+		a:focus {
+			border-bottom: 1px solid $color-underline;
+		}
+	}
+
+	.header-branding {
+		order: 2;
+	}
+
+	.site-search-bar {
+		order: 3;
+	}
+
+	.fa-search {
+		font-size: $font-size-lg;
+	}
 }
