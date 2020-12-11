@@ -3,57 +3,47 @@
 	padding-bottom: 4em;
 }
 
-.intro-wrapper {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	align-items: center;
-	max-width: 65em;
-	margin: 0 auto;
-}
-
-.intro-copy {
-	flex: 0 0 23em;
-}
-
-.into-subheader {
-	text-transform: uppercase;
-	font-size: $font-size-xs;
-	font-weight: 500;
-}
-
-.intro-copy-text {
-	color: $color-secondary;
-	font-size: $font-size-md;
-	line-height: 1.5em;
-}
-
-.intro-copy-title {
-	font-size: $font-size-xxl;
-	font-weight: 400;
-	margin-top: 0.3em;
-}
-
-.intro-image-container {
-	position: relative;
-	flex: 0 0 17em;
-
-	img {
-		position: absolute;
-		bottom: -18.5em;
-		max-width: calc(100% + 8.5em);
+.intro {
+	&-wrapper {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: center;
+		margin: 0 auto;
 	}
-}
 
-.blockquote-box {
-	flex: 0 0 16em;
-	text-align: center;
-	padding: 0.75em;
-	z-index: 200;
-}
+	&-copy {
+		flex: 0 0 23em;
+	}
 
-.blockquote-box-frame {
-	border: 8px solid $color-primary;
+	&-subheader {
+		text-transform: uppercase;
+		font-size: $font-size-xs;
+		font-weight: 500;
+	}
+
+	&-copy-text {
+		color: $color-secondary;
+		font-size: $font-size-md;
+		line-height: 1.5em;
+	}
+
+	&-copy-title {
+		font-size: $font-size-xxl;
+		font-weight: 400;
+		margin-top: 0.3em;
+	}
+
+	&-image-container {
+		position: relative;
+		flex: 0 0 17em;
+
+		img {
+			position: absolute;
+			bottom: -18.5em;
+			max-width: calc(100% + 8.5em);
+		}
+	}
 }
 
 .blockquote {
@@ -62,22 +52,34 @@
 	font-style: normal;
 	font-size: $font-size-lg;
 	line-height: 1.5em;
+
+	&-box-frame {
+		border: 8px solid $color-primary;
+	}
+
+	&-box {
+		flex: 0 0 16em;
+		text-align: center;
+		padding: 0.75em;
+		z-index: 200;
+	}
+
+	&-title {
+		display: block;
+		text-transform: uppercase;
+		font-size: $font-size-xs;
+		font-weight: 400;
+	}
+
+	&::before {
+		content: open-quote;
+	}
+
+	&::after {
+		content: close-quote;
+	}
 }
 
-.blockquote-title {
-	display: block;
-	text-transform: uppercase;
-	font-size: $font-size-xs;
-	font-weight: 400;
-}
-
-.blockquote::before {
-	content: open-quote;
-}
-
-.blockquote::after {
-	content: close-quote;
-}
 
 .quote-author,
 .quote-source {

@@ -1,0 +1,18 @@
+.section-heading {
+	.heading-title {
+		font-family: $font-secondary;
+		font-size: $font-size-xxl;
+		font-weight: 400;
+		text-align: center;
+		margin-top: 0;
+	}
+
+	.heading-description {
+		font-size: $font-size-md;
+		color: $color-secondary;
+		max-width: 40em;
+		margin: 1em auto 0;
+		text-align: center;
+		line-height: 1.25rem;
+	}
+}

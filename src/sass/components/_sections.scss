@@ -1,0 +1,10 @@
+.section-intro {
+	& + section {
+		padding-top: 8em;
+	}
+}
+
+.section-stories {
+	background: #f6f4ef;
+	padding: 5em 0;
+}

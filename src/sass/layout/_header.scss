@@ -16,6 +16,7 @@
 .menu-mobile-icon-open,
 .menu-mobile-icon-close {
 	display: none;
+	cursor: pointer;
 }
 
 .menu-main {
@@ -47,6 +48,7 @@
 	.menu-mobile-icon-open {
 		display: block;
 		font-size: $font-size-lg;
+		padding: 1em;
 	}
 
 	.menu-mobile-icon-close {
@@ -56,11 +58,13 @@
 		font-size: $font-size-xl;
 		z-index: 10000;
 		color: $color-mobile-menu-items;
+		width: 3em;
+		height: 3em;
 	}
 
 	.site-navigation-main {
 		height: 100%;
-		width: 0;
+		width: 100%;
 		position: fixed;
 		z-index: 1000;
 		top: 0;
@@ -68,7 +72,19 @@
 		background-color: rgb(0, 0, 0);
 		overflow-x: hidden;
 		transition: 0.5s;
+		transform: translateX(-100%);
+
+		.is-menu-open & {
+			transform: translateX(0);
+
+			.menu-mobile-icon-close {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+		}
 	}
+
 
 	.menu-main {
 		order: 1;
@@ -104,6 +120,8 @@
 
 	.site-search-bar {
 		order: 3;
+		padding: 1em;
+		cursor: pointer;
 	}
 
 	.fa-search {
