@@ -1,6 +1,11 @@
 .button-inline {
 	text-transform: uppercase;
 	font-size: $font-size-xs;
-	border-bottom: 2.5px solid $color-underline;
+	border-bottom: 1px solid $color-underline-primary;
 	font-weight: 500;
+
+	&-secondary {
+		@extend .button-inline;
+		border-bottom: 1px solid $color-underline-secondary;
+	}
 }

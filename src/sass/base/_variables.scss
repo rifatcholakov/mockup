@@ -1,14 +1,18 @@
 $font-primary: "Roboto", sans-serif;
-$font-secondary: serif;
+$font-secondary: "Lora", serif;
 
 $color-primary: #3b3b3b;
 $color-secondary: #818181;
-$color-underline: #eee;
+$color-underline-primary: #eee;
+$color-underline-secondary: #000;
 $color-mobile-menu-items: #fff;
+$color-background-primary: #f6f4ef;
 
 $font-size-xs: 0.625em;
-$font-size-sm: 0px;
+$font-size-sm: 0;
 $font-size-md: 0.75em;
-$font-size-lg: 1.0625em;
+$font-size-lg: 0.9375em;
 $font-size-xl: 1.75em;
 $font-size-xxl: 2.25em;
+
+$story-items-gutter: 1rem;

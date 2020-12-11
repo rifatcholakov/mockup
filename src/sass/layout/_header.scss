@@ -3,7 +3,7 @@
 	justify-content: space-between;
 	align-items: center;
 	padding: 0 4em;
-	border-bottom: 1px solid $color-underline;
+	border-bottom: 1px solid $color-underline-primary;
 }
 
 .header-branding {
@@ -94,7 +94,7 @@
 
 		a:hover,
 		a:focus {
-			border-bottom: 1px solid $color-underline;
+			border-bottom: 1px solid $color-underline-primary;
 		}
 	}
 
